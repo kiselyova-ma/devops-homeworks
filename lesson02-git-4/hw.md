@@ -119,7 +119,7 @@ PS C:\Users\marii\PycharmProjects\terraform> git log --pretty=format:"%C(bold bl
 ```
 
 7.Кто автор функции `synchronizedWriters`? 
-Автор - Martin Atkins
+Автор - Martin Atkins 
 ```
 PS C:\Users\marii\PycharmProjects\terraform> git log -G'func synchronizedWriters' --pretty=format:"%ad %h %an" --author-date-order --reverse
 Wed May 3 16:25:41 2017 -0700 5ac311e2a Martin Atkins
