@@ -13,9 +13,11 @@
 ![HIST](img/histfilesize.JPG)
 - histcontrol details: \
 ![HIST](img/histcontrol.JPG)
-9. `{}` - is commonly used in script cycles. Elements from the list are used for substitution, JIC, man bash: \
+9. `{}` curly braces are used as arrays builder, parameter expansion, placeholder for text, code blocks and redirection, saving output to a file, for grouping, coma separated list of commands, `{} \` is used for pathname.
+`{}` - are commonly used in script cycles. Elements from the list are used for substitution, JIC, man bash: \
 ![list](img/listwhatsoever.JPG)
-10. `touch {000001..100000}.extension` theoretically, the file count should be limited by your disk space only if there are no other explicitly set limitations, I suppose
+10. `touch {000001..100000}.extension` theoretically, the file count should be limited by your disk space only if there are no other explicitly set limitations. Practically `touch {000001..300000}.extension` bumps into the arguments limit:
+![HIST](img/arg-limit.JPG)
 11. `[[ -d /tmp ]]` - checks condition y -d /tmp and returns binary state 0/1, presence of catalogue /tmp
 12. Here you go: \
 ![PATH](img/vagrantvagrantvagrant.JPG)
