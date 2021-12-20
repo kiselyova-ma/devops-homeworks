@@ -9,7 +9,7 @@
 6. Pseudo terminal allows to pass data from PTY > TTY emulator, however, by default the output appears in non-graphic mode. [Read details in here](https://tldp.org/HOWTO/Text-Terminal-HOWTO-7.html)
 7. `bash 5>&1` - creates descriptor and redirects it to `stdout`, `echo netology > /proc/$$/fd/5` - output is this descriptor that we have created earlier: \
 ![descriptor](img/descriptor.JPG)
-8. `ls -l /root 3>&2 2>&1 1>&3`
+8. `ls -l /root 3>&2 2>&1 1>&3 | grep ls -c`
 9. `cat /proc/$$/environ` lists environment variables, alternatives are `env` and `printenv`.
 10. ![proc-cmdline](img/proc-cmdline.JPG) ![proc-exe](img/proc-exe.JPG)
 11. ![cpuinfo](img/cpuinfo.JPG)
