@@ -4,7 +4,21 @@
 - `ps -e |grep node_ex` - чек процесса;
 - `systemctl stop node_ex` - стоп процесса;
 - `systemctl start node_ex` - старт процесса. \
-Дайте знать, что именно нужно предоставить в ответе, если этого не достаточно.
+
+Кат конфига `node_exporter.service`:
+```bash
+[Unit]
+Description=Node Exporter
+
+[Service]
+User=node_exporter
+Group=node_exporter
+Type=simple
+ExecStart=/usr/local/bin/node_exporter
+
+[Install]
+WantedBy=multi-user.target
+```
 
 2. Метрик много, не уверена, нужно ли было перечислять все или некоторые.
 
