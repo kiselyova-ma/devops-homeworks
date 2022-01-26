@@ -5,20 +5,11 @@
 - `systemctl stop node_ex` - стоп процесса;
 - `systemctl start node_ex` - старт процесса. \
 
-Кат конфига `node_exporter.service`:
-```bash
-[Unit]
-Description=Node Exporter
+Кат конфига `node_exporter.service` и опций:
+![ne](img/catne.JPG)
 
-[Service]
-User=node_exporter
-Group=node_exporter
-Type=simple
-ExecStart=/usr/local/bin/node_exporter
-
-[Install]
-WantedBy=multi-user.target
-```
+Вот тут ещё добавила шелл с чеком, который был описан выше:
+![ne](img/grepne.JPG)
 
 2. Метрик много, не уверена, нужно ли было перечислять все или некоторые.
 
