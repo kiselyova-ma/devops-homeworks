@@ -65,7 +65,7 @@ owners.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 ```
-as alternate option to enter I've used:
+as alternate option:
 ```bash
 vagrant@server1:~$ sudo docker exec -it mysql-docker mysql -p"password" mysql_dump
 ```
